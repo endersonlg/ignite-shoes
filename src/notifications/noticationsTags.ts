@@ -7,3 +7,8 @@ export function tagUserInfoCreate(){
     'user_email':'enderson@gmail.com'
   })
 }
+
+
+export function tagCardUpdate(ItemsCount:string){
+  OneSignal.sendTag('card_item_count',ItemsCount)
+}
